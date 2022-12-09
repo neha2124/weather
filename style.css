@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(51, 50, 52);
+    background-blend-mode:soft-light;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position:center ;
+}
+.weather-card{
+    background-color:transparent;
+    border: 2px solid rgb(223, 210, 210);
+    color: white;
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 20px 15px 15px rgba(0, 0, 7, 0.9);
+    
+ 
+}
+.search-bar input{
+    position: relative;
+  padding: 8px 42px;
+  width: 18em;
+  border-radius:25px ; 
+  background: #000000d0;  
+  color: aliceblue;
+  font-size: 1.2em; 
+  text-transform: capitalize;
+}
+.search-bar input::placeholder{
+    font-size: 1.2em;
+    text-transform: capitalize;
+}
+.search-icon{
+    position: relative;
+    top: 2px;
+     right: 44px;
+     
+    
+
+    }
+    .search-button{
+        background-color:#222;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+
+    }
+
+    .search-section ,.description-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.description,.humidity,.wind-speed{
+    font-size: 1.2em;
+    margin: 1rem;
+}
+.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+.weather.loading:before{
+    visibility: visible;
+    content: " Loading ...";
+    position: absolute;
+    top: 0;
+    left: 20px;
+    font-size: 1.3em;
+}
