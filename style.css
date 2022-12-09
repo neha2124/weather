@@ -19,6 +19,7 @@ body{
     border-radius: 20px;
     padding: 3rem;
     box-shadow: 20px 15px 15px rgba(0, 0, 7, 0.9);
+    margin: 2em;
     
  
 }
@@ -74,4 +75,19 @@ body{
     top: 0;
     left: 20px;
     font-size: 1.3em;
+}
+/* //responsive */
+@media (min-width : 200px) and (max-width : 600px){
+    .weather-card{
+        padding: 1rem;
+    }
+    .search-bar input::placeholder{
+        font-size: 1em;
+        text-transform: capitalize;
+    }
+    .search-bar input{
+        font-size: 1em;
+        padding: 5px;
+        width: 14em;
+    }
 }
